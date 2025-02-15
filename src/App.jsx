@@ -1,6 +1,6 @@
 import { LuSparkles, LuRocket, LuUsers, LuChartBar } from "react-icons/lu";
-import { RiTwitterXLine } from "react-icons/ri";
-import { FaDiscord, FaTelegramPlane } from "react-icons/fa";
+import { SiKick } from "react-icons/si";
+import { FaTelegramPlane } from "react-icons/fa";
 
 function App() {
   return (
@@ -51,9 +51,9 @@ function App() {
         <p className="text-xl md:text-2xl mb-8">
           The most kawaii meme coin in the crypto universe!
         </p>
-        <button className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-colors duration-300 animate-bounce">
+        <a href={} className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-colors duration-300 animate-bounce">
           Buy AniMoon Now!
-        </button>
+        </a>
       </section>
 
       <section id="features" className="container mx-auto px-4 py-20">
@@ -106,13 +106,8 @@ function App() {
         <div className="flex justify-center space-x-8">
           <SocialLink
             href="#"
-            icon={<RiTwitterXLine className="w-8 h-8" />}
-            label="X"
-          />
-          <SocialLink
-            href="#"
-            icon={<FaDiscord className="w-8 h-8" />}
-            label="Discord"
+            icon={<SiKick className="w-8 h-8" />}
+            label="Kick"
           />
           <SocialLink
             href="#"
