@@ -9,7 +9,8 @@ function CTA() {
         Start your journey into the world of memecoins with the next big thing
       </p>
       <a
-        href={import.meta.env.VITE_COIN}
+        // href={import.meta.env.VITE_COIN}
+        href="https://www.google.com"
         target="_blank"
         className="bg-yellow-500 text-gray-800 font-bold py-2 px-4 rounded hover:bg-yellow-400 transition duration-300"
       >

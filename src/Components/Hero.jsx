@@ -16,7 +16,8 @@ function Hero() {
         </h1>
         <p className="text-xl md:text-2xl mb-8">The memecoin from the future</p>
         <a
-          href={import.meta.env.VITE_COIN}
+          // href={import.meta.env.VITE_COIN}
+          href="https://www.google.com"
           target="_blank"
           className="bg-yellow-500 text-gray-800 font-bold py-3 px-6 rounded-lg hover:bg-yellow-400 transition duration-300 text-lg"
         >
