@@ -1,6 +1,7 @@
 import { LuSparkles, LuRocket, LuUsers, LuChartBar } from "react-icons/lu";
 import { SiKick } from "react-icons/si";
 import { FaTelegramPlane } from "react-icons/fa";
+import bg from "./assets/animebg.png";
 
 function App() {
   return (
@@ -8,9 +9,9 @@ function App() {
       <header className="container mx-auto px-4 py-6 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <img
-            src="/placeholder.svg?height=40&width=40"
+            src={bg}
             alt="AniMoon Logo"
-            className="w-10 h-10 rounded-full"
+            className="w-10 h-10 rounded-full object-contain"
           />
           <span className="text-2xl font-bold">AniMoon</span>
         </div>
@@ -51,7 +52,10 @@ function App() {
         <p className="text-xl md:text-2xl mb-8">
           The most kawaii meme coin in the crypto universe!
         </p>
-        <a href={} className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-colors duration-300 animate-bounce">
+        <a
+          href={import.meta.env.VITE_COIN}
+          className="bg-pink-500 hover:bg-pink-600 text-white font-bold py-3 px-6 rounded-full text-lg transition-colors duration-300 animate-bounce"
+        >
           Buy AniMoon Now!
         </a>
       </section>
@@ -105,14 +109,16 @@ function App() {
         </h2>
         <div className="flex justify-center space-x-8">
           <SocialLink
-            href="#"
+            href={import.meta.env.VITE_KICK}
             icon={<SiKick className="w-8 h-8" />}
             label="Kick"
+            target="_blank"
           />
           <SocialLink
-            href="#"
+            href={import.meta.env.VITE_TELEGRAM}
             icon={<FaTelegramPlane className="w-8 h-8" />}
             label="Telegram"
+            target="_blank"
           />
         </div>
       </section>
